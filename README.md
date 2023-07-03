@@ -26,6 +26,7 @@ The filename is the date and time of the start of the session. The code in the p
 # Acknowledgements
 
 The author wishes to express thanks to Qstarz for providing information about the binary format used by the BL-1000GT, but this work is not directly associated with Qstarz themselves. Any errors in extracting and interpreting the GPS logformat should be blamed on the author and not Qstarz.
+
 The author also wished to express thanks to previous clients who pointed out the Qstarz device to me (I don't have explicit consent to name them explicitly).
 
 
