@@ -67,3 +67,4 @@ From within IJulia notebook:
     layers = Leaflet.Layer.(points, color=:blue)
     m = Leaflet.Map(;  layers, provider, zoom=17, height=1000, center=[Lat[1], Lon[1]])
 ```
+![](docs/img/LeafletOutput.png)
