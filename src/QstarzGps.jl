@@ -139,5 +139,13 @@ function readQstarzLog(filename :: AbstractString)
     gps = filter(x->(x.mode != 0x00), gps)  # Discards invalid log entries
 end
 
+function readQstarzLog(files :: Vector)
+    gps = readQstarzLog(files[1])
+    for cnt=2:length(files)
+        append!(gps, readQstarzLog(files[cnt]) )
+    end
+    gps
+end
+
 
 end
