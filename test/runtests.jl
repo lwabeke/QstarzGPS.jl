@@ -1,6 +1,6 @@
-using QstarzGps
+using QstarzGPS
 using Test
 
-@testset "QstarzGps.jl" begin
+@testset "QstarzGPS.jl" begin
     # Write your tests here.
 end

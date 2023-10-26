@@ -1,7 +1,7 @@
-# QstarzGps.jl
+# QstarzGPS.jl
 Package to load GPS logs from a Qstarz GPS logger into Julia
 
-[![Build Status](https://github.com/lwabeke/QstarzGps.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/lwabeke/QstarzGps.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://github.com/lwabeke/QstarzGPS.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/lwabeke/QstarzGPS.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
 Qstarz(http://www.qstarz.com/)  produces a number of GPS logger units, which are used in various applications, primarily for racing to record the car position on the track. The author has used some of these loggers to instrument various objects to provide a ground truth of where they moved when observing from the various sensors.
 
@@ -34,7 +34,7 @@ The author also wished to express thanks to previous clients who pointed out the
 # Example
 
 ```
-julia> using QstarzGps
+julia> using QstarzGPS
 
 julia> filename = "230502_120613.BIN"
 
@@ -56,7 +56,7 @@ julia> unix2datetime.(gpsLog.time[1:3])
 From within IJulia notebook:
 ```
 
-    using QstarzGps, Leaflet, GeoInterface
+    using QstarzGPS, Leaflet, GeoInterface
 
     filename = "230502_120613.BIN"
     gpsLog = readQstarzLog(filename)

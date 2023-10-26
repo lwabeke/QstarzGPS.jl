@@ -1,4 +1,4 @@
-module QstarzGps
+module QstarzGPS
 
 
 export readQstarzLog
@@ -107,7 +107,7 @@ Reads a Qstarz binary log file into a array of structure object,
 # Example
     
 ```
-julia> using QstarzGps
+julia> using QstarzGPS
     
 julia> filename = "230502_120613.BIN"
     
@@ -126,7 +126,7 @@ julia> unix2datetime.(gpsLog.time[1:3])
  2023-05-02T12:06:13.800
 ```    
 # Extended Example
-For an extended example, check the README or ?QstarzGps
+For an extended example, check the README or ?QstarzGPS
 """    
 function readQstarzLog(filename :: AbstractString)    
     filesize= stat(filename).size
